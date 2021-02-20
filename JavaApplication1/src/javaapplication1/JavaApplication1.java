@@ -6,6 +6,7 @@
 package javaapplication1;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -14,7 +15,8 @@ import java.util.Scanner;
 public class JavaApplication1 {
     
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+        //Clase8
+        //Scanner entrada = new Scanner(System.in);
         //Guardar Números:
         //float numero;
         //System.out.println("Digite un número: ");
@@ -33,6 +35,38 @@ public class JavaApplication1 {
         System.out.println("Ingrese una letra: ");
         letra = entrada.next().charAt(0);
         System.out.println("Letra: "+letra);*/
+        
+        //Clase9
+        /*String cadena;
+        int entero;
+        char letra;
+        double decimal;
+        //JOptionPane muestra los datos por medio de una ventana. NO usa consola.
+        cadena = JOptionPane.showInputDialog("Digite una cadena: ");
+        entero=Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número: "));
+        letra = JOptionPane.showInputDialog("Ingrese una letra: ").charAt(0);
+        decimal = Double.parseDouble(JOptionPane.showInputDialog("Ingrese un decimal: "));
+        JOptionPane.showMessageDialog(null, "La cadena es: "+cadena);
+        JOptionPane.showMessageDialog(null, "El Entero es: "+entero);
+        JOptionPane.showMessageDialog(null, "La letra es: "+letra);
+        JOptionPane.showMessageDialog(null, "Decimal: "+decimal);*/
+        
+        //Clase10 Suma,resta, mult, div
+        Scanner entrada = new Scanner(System.in);
+        float n1,n2,suma,resta,mult,division;
+        System.out.println("Primer número: ");
+        n1=entrada.nextFloat();
+        System.out.println("Segundo número: ");
+        n2=entrada.nextFloat();
+        suma = n1+n2;
+        resta= n1-n2;
+        mult= n1*n2;
+        division= n1/n2;
+        System.out.println("Suma: "+suma);
+        System.out.println("Resta: "+resta);
+        System.out.println("Multiplicación: "+mult);
+        System.out.println("Division: "+division);
     }
     
 }
+         
