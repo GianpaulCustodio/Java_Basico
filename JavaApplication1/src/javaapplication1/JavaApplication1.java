@@ -52,7 +52,7 @@ public class JavaApplication1 {
         JOptionPane.showMessageDialog(null, "Decimal: "+decimal);*/
         
         //Clase10 Suma,resta, mult, div
-        Scanner entrada = new Scanner(System.in);
+        /*Scanner entrada = new Scanner(System.in);
         float n1,n2,suma,resta,mult,division;
         System.out.println("Primer número: ");
         n1=entrada.nextFloat();
@@ -65,8 +65,61 @@ public class JavaApplication1 {
         System.out.println("Suma: "+suma);
         System.out.println("Resta: "+resta);
         System.out.println("Multiplicación: "+mult);
-        System.out.println("Division: "+division);
+        System.out.println("Division: "+division);*/
+        
+        //Clase 13 
+        /*Scanner entrada = new Scanner(System.in);
+        double num;
+        System.out.println("Ingrese el número: ");
+        num=entrada.nextDouble();
+        double raiz = Math.sqrt(num);
+        //Para redondear: Math.round(raiz)
+        System.out.println("Respuesta: "+raiz);*/
+        
+        //Clase 14
+        /*Scanner entrada = new Scanner(System.in);
+        int n1,n2,n3,suma;
+        System.out.println("1er número: ");
+        n1=entrada.nextInt();
+        System.out.println("2do número: ");
+        n2=entrada.nextInt();
+        System.out.println("3er número: ");
+        n3=entrada.nextInt();
+        suma=n1+n2+n3;
+        System.out.println("Suma: "+suma);*/
+        
+        //Clase 17
+        /*Scanner entrada = new Scanner(System.in);
+        int horas,semanas,dias,n,totald;
+        int auxhoras = 0;
+        int auxsemana=0;
+        int auxdia = 0;
+        System.out.println("Ingrese el número de horas: ");
+        n=entrada.nextInt();
+        dias=n/24;
+        horas=n%24;
+        if(dias>7){
+            auxsemana=dias/7;
+            auxdia=dias%7;
+            auxhoras=horas;
+        }else{
+            auxdia=dias;
+            auxhoras=horas;
+        }
+        System.out.println("Semanas: "+auxsemana);
+        System.out.println("Días: "+auxdia);
+        System.out.println("Horas: "+auxhoras);*/
+        
+        //Clase 20
+        Scanner entrada = new Scanner(System.in);
+        int n,division;
+        System.out.println("Ingrese el número: ");
+        n=entrada.nextInt();
+        division=n%10;
+        if(division==0)
+            System.out.println("Es multiplo de 10");
+        else
+            System.out.println("NO es multiplo de 10");
     }
     
 }
-         
