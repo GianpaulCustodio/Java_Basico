@@ -112,11 +112,10 @@ public class JavaApplication1 {
         
         //Clase 20
         Scanner entrada = new Scanner(System.in);
-        int n,division;
+        int n;
         System.out.println("Ingrese el número: ");
         n=entrada.nextInt();
-        division=n%10;
-        if(division==0)
+        if(n%10==0)
             System.out.println("Es multiplo de 10");
         else
             System.out.println("NO es multiplo de 10");
